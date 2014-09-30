@@ -83,4 +83,34 @@
 		</dependency>
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>libs-releases</name>
+			<url>http://tonik.artifactoryonline.com/tonik/libs-releases</url>
+		</repository>
+		<repository>
+			<snapshots />
+			<id>snapshots</id>
+			<name>remote-snapshot-repos</name>
+			<url>http://tonik.artifactoryonline.com/tonik/remote-snapshot-repos</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>tonik</id>
+			<name>tonik-releases</name>
+			<url>http://tonik.artifactoryonline.com/tonik/libs-releases-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>tonik</id>
+			<name>tonik-snapshots</name>
+			<url>http://tonik.artifactoryonline.com/tonik/libs-snapshots-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
