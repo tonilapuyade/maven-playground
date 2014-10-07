@@ -1,4 +1,4 @@
-package com.toni;
+package com.toni.impl;
 
 public class MyReleaseClass {
 
